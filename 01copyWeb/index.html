@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+</head>
+
+<body>
+    <div class="pageContainner">
+        <div class="announcement__wrapper">
+            <p>Get €10 OFF ON YOUR FIRST ORDER!</p>
+        </div>
+        <header class="header" onmouseover="scroll">
+            <a><img class="header__logo" src="images/logo-black.png" width="558" height="120" alt="Prestige-Vogue"></a>
+            <nav class="header__mainNav">
+                <ul class="list">
+                    <li class="header__list"><a class="headerListLink" href="#">SKINCARE</a></li>
+                    <li class="header__list"><a class="headerListLink" href="#">BODY</a></li>
+                    <li class="header__list"><a class="headerListLink" href="#">HAIR</a></li>
+                    <li class="header__list"><a class="headerListLink" href="#">KITS</a></li>
+                    <li class="header__list"><a class="headerListLink" href="#">ACCESSORIES</a></li>
+                    <li class="header__list"><a class="headerListLink" href="#">ABOUT</a></li>
+                    <li class="header__list"><a class="headerListLink" href="#">JOURNAL</a></li>
+                </ul>
+            </nav>
+            <nav class="header__subNav">
+                <ul class="list">
+                    <li class="header__list"><a class="headerListLink" href="#">ACCOUNT</a></li>
+                    <li class="header__list"><a class="headerListLink" href="#">SEARCH</a></li>
+                    <li class="header__list"><a class="headerListLink" href="#">CART</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="flickity__slideShow">
+                <div class="carousel" data-flickity='{
+                        "fade": true,
+                        "imagesLoaded": true,
+                        "autoPlay":5000,
+                        "wrapAround": true,
+                        "prevNextButtons": false,
+                        "pageDots": true}'>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="images/slideshow-01_1600x.jpg">
+                        <header class="sectionAHeader">
+                            <h3>Body</h3>
+                            <h2 class="sectionAHeaderTitle">Glow + Shine</h2>
+                            <div class="sectionHeader__linkWrapper">
+                                <a class="sectionHeader__link" href="#">Discover products</a>
+                                <div class="overlay"></div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="images/slideshow-02_1600x.jpg">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="images/slideshow-03_1600x.jpg">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" src="images/slideshow-04_1600x.jpg">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header class="sectionBHeader">
+                    <h3>For your skin</h3>
+                    <button class="sectionBButton" data-action="toggle-tab" aria-controls="block-featured-collection-0"
+                        aria-selected="true" role="tab">Masques</button>
+                    <button class="sectionBButton" data-action="toggle-tab" aria-controls="block-featured-collection-1"
+                        aria-selected="false" role="tab">Lips</button>
+                </header>
+                <div id="block-featured-collection-0" aria-hidden="true" role="tabpanel">
+                    <div class="sectionBImageContainer">
+                        <div class="sectionBImage">
+                            <img class="over" src="images/Bali-Papaya-Rice-Face-Masque-Packaging_400x.jpg">
+                            <img class="under" src="images/Bali-Papaya-Rice-Masque-Swatch_400x.jpg">
+                            <div class="productInfo">
+                                <h2 class="productTitle">
+                                    <a href="#">Bali Papaya Rice Masque</a>
+                                </h2>
+                                <div class="productPrice">€52,95</div>
+                            </div>
+                        </div>
+                        <div class="sectionBImage">
+                            <img class="over" src="images/Bali-Papaya-Rice-Face-Masque-Packaging_400x.jpg">
+                            <img class="under" src="images/Bali-Papaya-Rice-Masque-Swatch_400x.jpg">
+                        </div>
+                        <div class="sectionBImage">
+                            <img class="over" src="images/Bali-Papaya-Rice-Face-Masque-Packaging_400x.jpg">
+                            <img class="under" src="images/Bali-Papaya-Rice-Masque-Swatch_400x.jpg">
+                        </div>
+                        <div class="sectionBImage">
+                            <img class="over" src="images/Bali-Papaya-Rice-Face-Masque-Packaging_400x.jpg">
+                            <img class="under" src="images/Bali-Papaya-Rice-Masque-Swatch_400x.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div id="block-featured-collection-1" aria-hidden="false" role="tabpanel">
+                    <div class="sectionBImageContainer">
+                        <div class="sectionBImage">
+                            <img class="over" src="images/Grapefruit-Anise-Lip-Balm-Tin_400x.jpg">
+                            <img class="under" src="images/Grapefruit-Anise-Lip-Balm-Opened-Tin_400x.jpg">
+                            <div class="productInfo">
+                                <h2 class="productTitle">
+                                    <a class="productTitleLink" href="#">Bali Papaya Rice Masque</a>
+                                </h2>
+                                <div class="productPrice">€52,95</div>
+                            </div>
+                        </div>
+                        <div class="sectionBImage">
+                            <img class="over" src="images/Grapefruit-Anise-Lip-Balm-Tin_400x.jpg">
+                            <img class="under" src="images/Grapefruit-Anise-Lip-Balm-Opened-Tin_400x.jpg">
+                        </div>
+                        <div class="sectionBImage">
+                            <img class="over" src="images/Grapefruit-Anise-Lip-Balm-Tin_400x.jpg">
+                            <img class="under" src="images/Grapefruit-Anise-Lip-Balm-Opened-Tin_400x.jpg">
+                        </div>
+                        <div class="sectionBImage">
+                            <img class="over" src="images/Grapefruit-Anise-Lip-Balm-Tin_400x.jpg">
+                            <img class="under" src="images/Grapefruit-Anise-Lip-Balm-Opened-Tin_400x.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionBFooter">
+                    <a class="sectionBFooterLink" href="#">view all products</a>
+                    <div class="sectionBFooterOverlay"></div>
+                </div>
+            </section>
+            <hr>
+            <section class="sectionC">
+                <header class="sectionBHeader">
+                    <h3>for dehydrated and fatigued skin</h3>
+                    <h2>konjac sponge</h2>
+                </header>
+                <div class="featuredProductInfo">
+                    <a href="#">
+                        <img class="featuredProductImage"
+                            src="images/Jeju-Island-Bamboo-Charcoal-Konjac-Facial-Sponge_800x.jpg">
+                    </a>
+                    <div class="featuredProductWrapper">
+                        <form class="productForm">
+                            <div class="productMeta">
+                                <h1>
+                                    <a href="">Jeju Island Konjac Facial Sponge</a>
+                                </h1>
+                                <div>€18,95</div>
+                            </div>
+                            <div class="productDescription">
+                                <p>Our Jeju Island&nbsp;Konjac Facial Sponge is ideal for oily and acne prone skin. Made
+                                    of
+                                    100%
+                                    Konjac plant root and natural Bamboo Charcoal, this sponge contains activated carbon
+                                    and
+                                    various minerals that help draw out impurities and excess oil. The unique net like
+                                    structure
+                                    of the vegetable fibres will gently cleanse and exfoliate your skin, leaving your
+                                    face
+                                    feeling fresh, smooth, radiant and soft.</p>
+                            </div>
+                            <div class="productVariants">
+                                <span>
+                                    Color:
+                                    <span>Bamboo Charcoal</span>
+                                </span>
+                                <ul class="list">
+                                    <li>
+                                        <input id="featuredProduct0-0" type="radio" value="Bamboo Charcoal"
+                                            checked="checked" class="colorSwatchRadio">
+                                        <label for="featuredProduct0-0" data-tooltip="Bamboo Charcoal"
+                                            class="colorSwatch"
+                                            style="background-image: url(images/Jeju-Island-Bamboo-Charcoal.jpg);">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input id="featuredProduct0-0" type="radio" value="Bamboo Charcoal"
+                                            checked="checked" class="colorSwatchRadio">
+                                        <label for="featuredProduct0-0" data-tooltip="Bamboo Charcoal"
+                                            class="colorSwatch"
+                                            style="background-image: url(images/Jeju-Island-Bamboo-Charcoal.jpg);">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input id="featuredProduct0-0" type="radio" value="Bamboo Charcoal"
+                                            checked="checked" class="colorSwatchRadio">
+                                        <label for="featuredProduct0-0" data-tooltip="Bamboo Charcoal"
+                                            class="colorSwatch"
+                                            style="background-image: url(images/Jeju-Island-Bamboo-Charcoal.jpg);">
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="productBuyButton">
+                                <button>Add to cart</button>
+                            </div>
+                        </form>
+                        <div class="featuredproductView">
+                            <a href="#">View product details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sectionD">
+                <div class="sectionDImgA">
+                    <a class="sectionDImgAnimation" href="#">
+                        <img class="sectionDImg" src="images/collection-skincare_750x750_crop_center.jpg">
+                    </a>
+                    <div>
+                        <h2>Skincare</h2>
+                        <span>View products</span>
+                    </div>
+                </div>
+                <div class="sectionDImgB">
+                    <a class="sectionDImgAnimation" href="#">
+                        <img class="sectionDImg" src="images/collection-body_750x750_crop_center.jpg">
+                    </a>
+                </div>
+                <div class="sectionDImgC">
+                    <a class="sectionDImgAnimation" href="#"><img class="sectionDImg"
+                            src="images/collection-hair_750x750_crop_center.jpg"></a>
+                </div>
+                <div class="sectionDImgD">
+                    <a class="sectionDImgAnimation" href="#">
+                        <img class="sectionDImg" src="images/collection-kits_1000x.jpg">
+                    </a>
+                </div>
+                <div class="sectionDImgE">
+                    <a class="sectionDImgAnimation" href="#">
+                        <img class="sectionDImg" src="images/collection-accessories_1000x.jpg">
+                    </a>
+                </div>
+            </section>
+            <section class="sectionE">
+                <header class="sectionBHeader">
+                    <h3>Hair</h3>
+                    <h2>Discover Our Range</h2>
+                </header>
+                <div class="featuredImageE">
+                    <div class="imageE">
+                        <img src="images/shop-hair_800x.progressive.jpg">
+                    </div>
+                    <div class="carouselE" data-flickity='{
+                        "fade": true,
+                        "prevNextButtons": false,
+                        "pageDots": true,
+                        "cellSelector": ".carouselE-cell"
+                    }'>
+                        <div class="carouselE-cell">
+                            <img src="images/Artifact-Mer-Mer-Monoi-Glossy-Mane-bottle-packaging-2-01_600x.jpg"
+                                width="250px">
+                            <h2>
+                                <a href="#">Mèr-Mèr Monoï Tiaré <br> Tails Hair Oil</a>
+                            </h2>
+                            <span>€35,95</span>
+                        </div>
+                        <div class="carouselE-cell">
+                            <img src="images/Artifact-Mer-Mer-Monoi-Milky-Waves-bottle-packaging-2-01_600x.jpg"
+                                width="250px">
+                        </div>
+                        <div class="carouselE-cell">
+                            <img src="images/Artifact-Mer-Mer-Monoi-Tiare-Tails-bottle-packaging-2-01_600x.jpg"
+                                width="250px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="sectionF">
+                <div class="sectionFList">
+                    <div class="imageF">
+                        <img src="images/timeline-story_1000x.jpg">
+                    </div>
+                    <div class="imageFInfo">
+                        <header>
+                            <h3>Ancient Wisdom</h3>
+                            <h2>Mordern performance</h2>
+                        </header>
+                        <p>
+                            We lovingly create products that will complement and enhance the daily self-care ritual,
+                            using only the highest quality active ingredients and botanicals that are effective,
+                            high-performance and always non-toxic.
+                        </p>
+                    </div>
+                </div>
+                <div class="sectionFNav">
+                    <button>Story</button>
+                    <button>Inspiration</button>
+                    <button>Quality</button>
+                </div>
+            </section>
+            <hr>
+            <section class="sectionG">
+                <header class="sectionBHeader">
+                    <h3>The perfect gift</h3>
+                    <h2>For your friends</h2>
+                </header>
+                <div class="featuredProductG">
+                    <a href="#">
+                        <img src="images/gift-card_800x.png" alt="">
+                    </a>
+                    <div class="featuredProductGInfo">
+                        <form class="productForm">
+                            <div class="productMeta">
+                                <h1>
+                                    <a href="">Jeju Island Konjac Facial Sponge</a>
+                                </h1>
+                                <div>€18,95</div>
+                            </div>
+                            <div class="productDescription">
+                                <p>It's the perfect gift for everyone on your list (as well as the simplest). The
+                                    recipient can redeem it for merchandise of their choice!</p>
+                            </div>
+                            <div class="productBuyButton">
+                                <button>Add to cart</button>
+                            </div>
+                        </form>
+                        <div class="shareIcon">
+                            <span>Share</span>
+                            <div>
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                            </div>
+                        </div>
+                        <div class="featuredproductView">
+                            <a href="#">View product details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr style="margin: 0;">
+            <section class="sectionH">
+                <header class="sectionBHeader">
+                    <h3>News</h3>
+                    <h2>From The Journal</h2>
+                </header>
+                <div class="articleListWrapper">
+                    <article class="articleG">
+                        <a href=#>
+                            <img src="images/clean-brushes_700x.jpg">
+                        </a>
+                        <div class="articleInfo">
+                            <h2>How to clean makeup brushes?</h2>
+                            <p>I'm going to admit...that I don't always wash my makeup brushes when it's due for a
+                                cleaning. I know...I know...gross! However, I do sanitize them ...</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </article>
+                    <article class="articleG">
+                        <a href=#>
+                            <img src="images/avocado-mask_700x.jpg">
+                        </a>
+                        <div class="articleInfo">
+                            <h2>THE PERFECT WINTER MASK</h2>
+                            <p>It's getting to the point in winter now where our skin is just screaming for help! A
+                                great remedy to start the year off right: Avocado.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </article>
+                    <article class="articleG">
+                        <a href=#>
+                            <img src="images/clay-mask_700x.jpg">
+                        </a>
+                        <div class="articleInfo">
+                            <h2>WHICH CLAY MASK IS FOR YOU ?</h2>
+                            <p>We all know to some degree, how clay is good it is for your skin. But why, exactly? Which
+                                different types of clay benefit your skin?</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="sectionHFooter">
+                    <a href="#">Discover our stories</a>
+                </div>
+            </section>
+            <section class="sectionI">
+                <div></div>
+                <div>
+                    <img src="images/photo-parallax_1500x.jpg">
+                </div>
+                <div></div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-inner">
+                <div class="footerText">
+                    <h2>About the shop</h2>
+                    <p>Artifact Skin Co is a Canadian brand, created by Narae Kim and Elie Nehme, which specializes in
+                        the production of all-natural face masks.</p>
+                    <ul class="list">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+                <div class="footerLinks">
+                    <h2>Shop</h2>
+                    <ul class="footerList">
+                        <li><a href="#">Skincare</a></li>
+                        <li><a href="#">Body</a></li>
+                        <li><a href="#">Hair</a></li>
+                        <li><a href="#">Kits</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footerLinks">
+                    <h2>About</h2>
+                    <ul class="footerList">
+                        <li><a href="#">Story</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of Usage</a></li>
+                    </ul>
+                </div>
+                <div class="footerNewsletter">
+                    <h2>Newsletter</h2>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="footer-aside">
+                <div>copyright</div>
+                <div>paymentlist</div>
+            </div> -->
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
